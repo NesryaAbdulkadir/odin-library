@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+  padding: 20px;
+  border-bottom: 6px solid #f3bf32;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+.buttons button {
+  background-color: cadetblue;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  padding: 20px;
+}
+.add-book {
+  width: 400px;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  z-index: 999;
+}
+.add-book-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-book-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 1px 2px #f0b81ebb;
+}
+.close-board {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-element label {
+  font-size: 18px;
+}
+.form-element input {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+}
+.form-element-checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+.form-element input:focus {
+  opacity: 0.5;
+}
+button:hover {
+  opacity: 0.7;
+}
